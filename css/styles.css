@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #15212d;
+	font-family: 'Poppins', sans-serif;
+}
+.container {
+	position: relative;
+	padding: 100px 150px;
+}
+.container h2 {
+	font-size: 4em;
+	font-weight: 500;
+	color: #767f88;
+	margin-bottom: 40px;
+	line-height: 1.1em;
+}
+.container p {
+	font-size: 1.1em;
+	color: #767f88;
+}
+.scrollTop {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	background: #fff url('../icon/up.svg');
+	background-size: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	cursor: pointer;
+	transform: translateY(-100vh);
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+}
+.scrollTop.active {
+	transform: translateY(0);
+	visibility: visible;
+	opacity: 1;
+}
